@@ -1,13 +1,18 @@
 Parrot Flower Power Api access guide
 ====================================
 
-What we provide ?
------------------
+What do we provide ?
+--------------------
 
 If you are a Parrot Flower Power user, you can already access your data via the iOs free application, or see it in our website: https://myflowerpower.parrot.com.
 
 We also give you access directly to the api if you want to reuse the data.
 This api is readonly.
+
+Where to find documentation ?
+-----------------------------
+
+You can find documentation on the web API here: https://flowerpowerdev.parrot.com/projects/flower-power-web-service-api/wiki
 
 
 How to use it ?
@@ -31,12 +36,8 @@ With that `client_id` and `client_secret`, and a `username` and `password` you c
 
 With that token, you will be able to access this different read-only api:
 
- * api-4.02, search for a plant.
- * api-5.01, get PlantDB details for one plant
- * api-5.06, get PlantDB details for many plants.
  * api-1.25, get all the data for your garden
  * api-1.28, get all the statuses for all your garden locations.
- * api-3.05, get all the images url, attached to all your garden locations.
  * api-1.03, get all the samples (every measurement) for a garden locations.
 
 

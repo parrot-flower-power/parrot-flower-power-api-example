@@ -66,20 +66,11 @@ access_token = result['access_token']
 
 oauth_bearer = {'Authorization':'Bearer '+access_token}
 
-# some generic search in the PlantDB
-for key,url in (
-    ('api-4.02-search-rosa','/search/v5/plants/rosa?generate_index=ASC'),
-    ('api-5.01-plants','/plant_library/v1/plant/6677'),
-    ('api-5.06-plants','/plant_library/v1/plants/6677,146,405,5671,7548,3461,3462,2394,6003,710'),
-):
-    print key
-    test_api_and_dump_to_json(key,url)
 
 # user data : sync (garden_locations and sensors) and statuses.
 for key,url in (
     ('api-1.25-sync','/sensor_data/v2/sync?include_s3_urls=1'),
     ('api-1.28-status','/sensor_data/v1/garden_locations_status'),
-    ('api-3.05-images','/image/v2/location/user_images'),
 ):
     print key
     test_api_and_dump_to_json(key,url)
